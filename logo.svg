@@ -1,0 +1,69 @@
+<svg width="220" height="220" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Fondo elegante -->
+    <radialGradient id="fondo" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#fff3fa"/>
+      <stop offset="50%" stop-color="#f6d9ff"/>
+      <stop offset="100%" stop-color="#cbb2ff"/>
+    </radialGradient>
+
+    <!-- Texto dorado rosado -->
+    <linearGradient id="oroRosado" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eabf9f"/>
+      <stop offset="50%" stop-color="#f5c4d4"/>
+      <stop offset="100%" stop-color="#d5a9ff"/>
+    </linearGradient>
+
+    <!-- Brillo animado (más suave) -->
+    <linearGradient id="brillo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0)" />
+      <stop offset="50%" stop-color="rgba(255,255,255,0.5)" />
+      <stop offset="100%" stop-color="rgba(255,255,255,0)" />
+    </linearGradient>
+
+    <mask id="brilloMask">
+      <rect x="-300" y="0" width="600" height="220" fill="url(#brillo)">
+        <animate attributeName="x" from="-300" to="300" dur="6s" repeatCount="indefinite" />
+      </rect>
+    </mask>
+  </defs>
+
+  <!-- Fondo -->
+  <circle cx="110" cy="110" r="100" fill="url(#fondo)" />
+
+  <!-- Reflejo sutil -->
+  <circle cx="110" cy="110" r="100" fill="white" mask="url(#brilloMask)" opacity="0.15" />
+
+  <!-- Texto principal (más grande y visible) -->
+  <text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle"
+        font-family="Playfair Display, serif" font-size="42"
+        fill="url(#oroRosado)" font-weight="bold">
+    Luz y Mar
+  </text>
+
+  <!-- Brillo lateral discreto -->
+  <circle cx="50" cy="70" r="3" fill="white" opacity="0.8">
+    <animate attributeName="opacity" values="1;0;1" dur="3s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="175" cy="150" r="4" fill="white" opacity="0.7">
+    <animate attributeName="opacity" values="0;1;0" dur="4s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Vestiditos pequeños alrededor -->
+  <path d="M110 25 l-6 10 h12z" fill="#e7c2ff" opacity="0.7">
+    <animateTransform attributeName="transform" attributeType="XML" type="rotate"
+      from="0 110 110" to="360 110 110" dur="12s" repeatCount="indefinite" />
+  </path>
+  <path d="M110 195 l-6 -10 h12z" fill="#ffd6e7" opacity="0.7">
+    <animateTransform attributeName="transform" attributeType="XML" type="rotate"
+      from="360 110 110" to="0 110 110" dur="14s" repeatCount="indefinite" />
+  </path>
+  <path d="M25 110 l10 -6 v12z" fill="#d8b8ff" opacity="0.6">
+    <animateTransform attributeName="transform" attributeType="XML" type="rotate"
+      from="0 110 110" to="360 110 110" dur="18s" repeatCount="indefinite" />
+  </path>
+  <path d="M195 110 l-10 -6 v12z" fill="#fcd4ec" opacity="0.6">
+    <animateTransform attributeName="transform" attributeType="XML" type="rotate"
+      from="360 110 110" to="0 110 110" dur="20s" repeatCount="indefinite" />
+  </path>
+</svg>
