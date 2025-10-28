@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boutique Luz y Mar</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 1rem;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    nav a {
+      font-weight: bold;
+      color: #8a2be2;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ff69b4;
+    }
+    body {
+      margin-top: 80px; /* espacio para el menú fijo */
+    }
+
+    /* ✨ Efecto de brillo en el título */
+    .titulo {
+      font-size: 3rem;
+      font-family: 'Playfair Display', serif;
+      background: linear-gradient(90deg, #eec6ff, #ffb6d9, #fff, #eec6ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 300%;
+      animation: brilloTexto 6s linear infinite;
+      font-weight: bold;
+      text-shadow: 0 0 15px rgba(255, 182, 217, 0.4);
+    }
+    @keyframes brilloTexto {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body>
+  <!-- 🌟 MENÚ DE NAVEGACIÓN -->
+  <nav>
+    <a href="#vestidos">Vestidos</a>
+    <a href="#trajes">Trajes</a>
+    <a href="#accesorios">Accesorios</a>
+    <a href="#calzados">Calzados</a>
+    <a href="#quince">Quinceañera</a>
+    <a href="#novia">Novia</a>
+    <a href="#nosotros">Nosotros</a>
+  </nav>
+
+  <!-- 🌟 ENCABEZADO -->
+  <header class="encabezado">
+    <div class="logo-container">
+      <img src="logo.svg" alt="Logo Luz y Mar" class="logo">
+      <div class="brillo"></div>
+    </div>
+    <h1 class="titulo">Boutique Luz y Mar</h1>
+    <p class="subtitulo">Elegancia, romanticismo y estilo en un solo lugar</p>
+  </header>
+
+  <!-- 💖 PORTADA PRINCIPAL -->
+  <section class="hero">
+    <div class="texto-hero">
+      <h2>Encuentra el look perfecto para cada ocasión</h2>
+      <p>Vestidos de gala, trajes, accesorios y calzados elegantes que resaltan tu belleza.</p>
+    </div>
+  </section>
+
+  <!-- 👗 VESTIDOS DESTACADOS -->
+  <section class="galeria" id="vestidos">
+    <h2>Vestidos Destacados</h2>
+    <div class="imagenes">
+      <img src=" imagen.jpg" alt= Vestido" class="bio-img"> 
+  <img src=" imagen 1.jpg" alt= traje caballero" class="bio-img">  
+<img src=" imagen 2.jpg" alt= Accesorio" class="bio-img">
+ <img src=" imagen 3.jpg" alt= Calzado" Class="bio-img">
+ <img src=" imagen 4.jpg" alt= Vestido de XV" Class="bio-img">
+    </div>
+  </section>
+
+  <!-- 🤵‍♂️ TRAJES -->
+  <section class="galeria" id="trajes">
+    <h2>Trajes de Gala para Caballeros</h2>
+    <div class="imagenes">
+      <img src=" imagen T1.jpg" alt= Traje Caballero" Class="bio-img">
+      <img src=" imagen T2.jpg" alt= Traje Caballero 2" Class="bio-img">
+      <img src=" imagen T3.jpg" Alt= Traje Caballero 3" Class="bio-img">
+      <img src=" imagen T4.jpg" Alt= Traje Caballero 4" Class="bio-img">
+    </div>
+  </section>
+
+  <!-- 💍 ACCESORIOS -->
+  <section class="galeria" id="accesorios">
+    <h2>Accesorios Elegantes</h2>
+    <div class="imagenes">
+   <img src=" imagen A1.jpg" alt= Accesorio" Class="bio-img">
+      <img src=" imagen A2.jpg" alt= Accesorio 2" Class="bio-img">
+      <img src=" imagen A3.jpg" alt= Accesorio 3" Class="bio-img">
+      <img src=" imagen A4.jpg" alt= Accesorio 4" Class="bio-img">
+    </div>
+  </section>
+
+  <!-- 👡 CALZADOS -->
+  <section class="galeria" id="calzados">
+    <h2>Calzados Elegantes</h2>
+    <div class="imagenes">
+      <img src=" imagen C1.jpg" alt= Calzado1" Class="bio-img">
+      <img src=" imagen C2.jpg" alt= Calzado 2" Class="bio-img">
+      <img src=" imagen C3.jpg" alt= Calzado 3" Class="bio-img">
+      <img src=" imagen C4.jpg" alt= Calzado "  class="bio-img">
+    </div>
+  </section>
+
+  <!-- 💃 QUINCEAÑERA -->
+  <section class="galeria" id="quince">
+    <h2>Vestidos de Quinceañera</h2>
+    <div class="imagenes">
+      <img src=" imagen XV.jpg" alt= Vestido Quinceañera 1" Class ="bio-img">
+      <img src=" imagen XV2.jpg" alt= Vestido Quinceañera 2" Class ="bio-img">
+      <img src=" imagen XV3.jpg" alt=Vestido Quinceañera 3" Class ="bio-img">
+      <img src=" imagen XV4.jpg" alt= Vestido Quinceañera 4" Class ="bio-img">
+    </div>
+  </section>
+
+  <!-- 👰 NOVIAS -->
+  <section class="galeria" id="novia">
+    <h2>Vestidos de Novia</h2>
+    <div class="imagenes">
+      <img src=" imagen V.jpg" alt= Vestido Novia 1" Class="bio-img">
+      <img src=" imagen V2.jpg" alt= Vestido Novia 2" class="bio-img">
+      <img src=" imagen V3.jpg" alt= Vestido Novia 3" Class="bio-img">
+      <img src=" imagen V4.jpg" alt= Vestido Novia 4" Class="bio-img">
+    </div>
+  </section>
+
+  <!-- 🌺 NOSOTROS -->
+  <section class="nosotros" id="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>
+      En <strong>Boutique Luz y Mar</strong> encontrarás diseños únicos y elegantes,
+      hechos para resaltar tu belleza y personalidad.  
+      Nos especializamos en vestidos, trajes, calzados y accesorios de alta calidad
+      para que brilles en cada momento importante de tu vida.
+    </p>
+  </section>
+
+  <footer>
+    <p>© creada por Inis Paternina Lazaro @2025 Boutique Luz y Mar — Creada pensando en ti en tu belleza.</p>
+  </footer>
+</body>
+</html>
